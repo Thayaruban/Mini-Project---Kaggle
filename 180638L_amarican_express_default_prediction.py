@@ -263,7 +263,7 @@ output.to_csv('submission_lightgbm.csv', index=False)
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 scaler.fit(X.copy())
-scaled_x = scaler2.transform(X.copy())
+scaled_x = scaler.transform(X.copy())
 scaler.fit(test_dataset.copy())
 scaled_test_data = scaler.transform(test_dataset.copy())
 
